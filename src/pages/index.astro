@@ -1,23 +1,92 @@
 ---
 import AppShell from "../layouts/AppShell.astro";
 import { AvContainer, AvButton } from "@ansiversa/components";
+
+const title = "Fanfic Generator – Ansiversa";
+const description = "Create stories from fan universes.";
 ---
 
-<AppShell title="Fanfic Generator" description="Fanfic Generator – powered by Ansiversa.">
-    <!-- Hero -->
+<AppShell title={title} description={description}>
+  <!-- Hero -->
   <section class="av-hero">
     <AvContainer size="narrow" className="av-hero__content--narrow">
       <div class="av-hero__content">
         <div class="av-kicker">
-          <span>Ansiversa Ecosystem</span>
+          <span>Writing & Content · Ansiversa Mini App</span>
         </div>
         <h1 class="av-gradient-text">Fanfic Generator</h1>
         <p>
-          This project uses the shared @ansiversa/components package and global design system. Use this starter as a base for your next mini-app in the Ansiversa universe.
+          Create stories from fan universes.
         </p>
       </div>
       <div class="av-cta-row">
-        <AvButton href="https://www.ansiversa.com">Visit Ansiversa</AvButton>
+        <AvButton href="https://fanfic-generator.ansiversa.com">Launch Fanfic</AvButton>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- Problem -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">The problem it solves</h2>
+        <p class="av-section-lead">
+          Blank pages and inconsistent ideas slow down your writing.
+        </p>
+      </div>
+      <div class="av-section-body space-y-3 text-slate-300">
+        <p>Fanfic Generator gives you guided structure so you can write faster and better.</p>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- Why this mini app -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">Why Fanfic Generator feels different</h2>
+        <p class="av-section-lead">
+          A focused mini app inside the larger Ansiversa ecosystem.
+        </p>
+      </div>
+      <div class="av-section-body">
+        <ul class="space-y-2 text-slate-300 list-disc list-inside">
+          <li>Built for creators, marketers, and writers of all levels.</li>
+          <li>Turns rough ideas into clear, well-structured content.</li>
+          <li>Lets you reuse and adapt your best writing patterns.</li>
+        </ul>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- How it works -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">How it works</h2>
+        <p class="av-section-lead">
+          Simple, clear steps so people can start in under a minute.
+        </p>
+      </div>
+      <ol class="av-section-body space-y-2 text-slate-300 list-decimal list-inside">
+        <li>Open Fanfic Generator when you’re ready to write.</li>
+        <li>Choose the type of piece or style you want.</li>
+        <li>Refine the generated ideas or text until it fits your voice.</li>
+      </ol>
+    </AvContainer>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">Ready to try Fanfic Generator?</h2>
+        <p class="av-section-lead">
+          Open the app, follow the simple flow, and let it handle the heavy lifting.
+        </p>
+      </div>
+      <div class="av-cta-row">
+        <AvButton href="https://fanfic-generator.ansiversa.com">Start with Fanfic</AvButton>
       </div>
     </AvContainer>
   </section>
